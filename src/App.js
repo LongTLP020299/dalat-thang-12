@@ -9,20 +9,20 @@ const App = () => {
     const [currentPlan, setCurrentPlan] = useState(null);
 
     const fetchPlans = async () => {
-        const response = await fetch('https://datlatmaiiu.onrender.com/plans');
+        const response = await fetch(process.env.REACT_APP_API_URL);
         const data = await response.json();
         setPlans(data);
     };
 
     const savePlan = async (plan) => {
         if (currentPlan) {
-            await fetch(`https://datlatmaiiu.onrender.com/plans/${currentPlan.id}`, {
+            await fetch(`${process.env.REACT_APP_API_URL}/plans/${currentPlan.id}`, {
                 method: 'PUT',
                 body: JSON.stringify(plan),
                 headers: { 'Content-Type': 'application/json' }
             });
         } else {
-            await fetch('https://datlatmaiiu.onrender.com/plans', {
+            await fetch(process.env.REACT_APP_API_URL, {
                 method: 'POST',
                 body: JSON.stringify(plan),
                 headers: { 'Content-Type': 'application/json' }
