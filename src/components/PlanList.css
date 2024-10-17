@@ -1,0 +1,47 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px; /* Centered list */
+    margin: 20px auto; /* Center the list */
+    background: linear-gradient(to right, #F0F0F0, #D3D3D3); /* Gradient from light gray to darker gray */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding inside the background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+
+li {
+    background: #ffffff; /* White background for cards */
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.2s; /* Scale on hover */
+}
+
+li:hover {
+    transform: scale(1.02); /* Slightly increase size on hover */
+}
+
+h3 {
+    margin: 0;
+    color: #2C3E50; /* Darker text color */
+}
+
+p {
+    margin: 5px 0;
+    color: #7F8C8D; /* Lighter text color */
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #E74C3C; /* Red background for edit button */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #C0392B; /* Darker red on hover */
+}

@@ -1,0 +1,39 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 400px; /* Centered form */
+    background: linear-gradient(to bottom right, #ffffff, #F9F9F9); /* Light gradient */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+
+input, textarea {
+    margin: 10px 0;
+    padding: 12px; /* Increased padding */
+    border: 1px solid #BDC3C7; /* Gray border */
+    border-radius: 4px;
+    font-size: 1em; /* Increase font size */
+}
+
+input:focus, textarea:focus {
+    border-color: #3498DB; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 12px;
+    background-color: #3498DB; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+button:hover {
+    background-color: #2980B9; /* Darker blue on hover */
+}
